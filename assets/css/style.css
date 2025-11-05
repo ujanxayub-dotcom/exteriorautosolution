@@ -1,0 +1,16 @@
+/* Base tweaks for Tailwind + custom tokens */
+:root{
+  --brand:#6B21A8;
+  --brand-2:#7C3AED;
+}
+.nav-link{ @apply text-sm text-gray-700 hover:text-purple-700; }
+.btn-primary{ @apply inline-flex items-center justify-center px-4 py-2 rounded-xl font-semibold text-white bg-purple-700 hover:bg-purple-800 shadow; }
+.btn-secondary{ @apply inline-flex items-center justify-center px-4 py-2 rounded-xl font-semibold text-purple-700 bg-purple-100 hover:bg-purple-200; }
+.section-title{ @apply text-2xl font-bold; }
+.category-card{ @apply block text-center p-6 rounded-2xl bg-gradient-to-br from-purple-50 to-purple-100 hover:from-purple-100 hover:to-purple-200 font-semibold; }
+.feature-card{ @apply p-6 rounded-2xl bg-white shadow; }
+.input{ @apply w-full px-3 py-2 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-purple-600; }
+
+/* Simple animation */
+@keyframes floaty { 0% {transform:translateY(0)} 50% {transform:translateY(-4px)} 100% {transform:translateY(0)} }
+img[alt="Sparepart Exterior"]{ animation: floaty 6s ease-in-out infinite; }
